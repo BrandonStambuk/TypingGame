@@ -1,0 +1,14 @@
+.home-page-header {
+  width: 100%;
+}
+
+.home-page-nav {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.home-page-nav-contentlinks{
+  display: flex;
+  gap: 10px;
+}

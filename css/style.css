@@ -1,0 +1,296 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.error {
+  background-color: tomato;
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section {
+  display: grid;
+  place-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+input {
+  outline: none;
+  border: 2px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 50px 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-auth {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.header-auth {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-form {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container-form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.container-inputs {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.error-message {
+  width: auto;
+  padding: 0.3rem;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+.area-texto {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container-area-texto {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.palabra,
+.input-palabra {
+  width: 80%;
+  border: 2px solid black;
+  padding: 1rem;
+  text-align: center;
+  letter-spacing: 0.7rem;
+  font-weight: bold;
+}
+
+.palabra {
+  height: 2rem;
+}
+
+.input-palabra {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+
+.accept {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.wrong-fall {
+  position: relative;
+  top: 5px;
+  color: red;
+  font-size: 1.5rem;
+}
+
+.wrong {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.barra {
+  width: 2px;
+  height: 1.3rem;
+  background-color: black;
+  animation: pulso 0.7s infinite ease-in-out;
+}
+.chart {
+  width: 100%;
+}
+.container-historial {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: #1a1a1a 2px solid;
+}
+.container-historial p {
+  margin: 0;
+}
+@keyframes pulso {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
